@@ -7,6 +7,8 @@ public class Test1 {
 		System.out.println(" Dev ");
 		
 		System.out.println(" Staging ");
+		
+		System.out.println(" Master 2hh ");
 
 	}
 
