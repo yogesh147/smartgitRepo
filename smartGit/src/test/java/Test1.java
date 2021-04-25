@@ -6,7 +6,13 @@ public class Test1 {
 		
 		System.out.println(" Dev ");
 		
+
 		System.out.println(" Dev g");
+
+		System.out.println(" Dev 2");
+		
+		System.out.println(" Dev ");
+
 
 
 	}
