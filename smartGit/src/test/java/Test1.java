@@ -5,6 +5,8 @@ public class Test1 {
 		System.out.println(" Master ");
 		
 		System.out.println(" Dev ");
+		
+		System.out.println(" Staging ");
 
 	}
 
