@@ -1,0 +1,12 @@
+Stream API is used to process collections of objects.
+It is a sequence of object that supports various methods which can be pipelined to produce desired results
+It is not a Data Structure instead it takes I/P from collections, arrays and I/O channels.
+It does not change Data Structure, they only provide results based on pipelined methods (with terminal methods)
+
+WHY IT NEED ?
+
+First use is, Functional programming by using lambdas expression.
+Second is, Code reduced by using streams method chaining process.    
+Third is , Perform bulk operations (filter -> map -> forEach ).
+
+ 
