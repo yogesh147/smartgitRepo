@@ -9,4 +9,27 @@ First use is, Functional programming by using lambdas expression.
 Second is, Code reduced by using streams method chaining process.    
 Third is , Perform bulk operations (filter -> map -> forEach ).
 
- 
+==================================================================================================
+MAP And Flat MAP :-
+
+These are java 8 stream API intermediate methods which return another stream as part of output.
+
+MAP :-
+
+MAP is used for transformation. 
+Stream<R> map(Stream<T> input){} , 
+produce single value for each input (one-to-one mapping)
+
+E.g:- stream.of("a","b","c") ----> [A,B,C] (tramsforms lower to upper case)
+
+================================================================================================
+Flat MAP :-
+
+Flat MAP is used for transformation and flattering. 
+Stream<R> map(Stream<Stream<T>> input){}, 
+produce multiple value for each input (one-to-many mapping)
+
+E.g:- stream.of([1,2], [3,4], [5,6]) ----> [1,2,3,4,5,6] (transforms Stream of stream into single stream)
+
+===========================================================================================================
+
