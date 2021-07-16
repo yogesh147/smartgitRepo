@@ -20,7 +20,7 @@ MAP is used for transformation.
 Stream<R> map(Stream<T> input){} , 
 produce single value for each input (one-to-one mapping)
 
-E.g:- stream.of("a","b","c") ----> [A,B,C] (tramsforms lower to upper case)
+E.g:- stream.of("a","b","c") ----> [A,B,C] (transforms lower to upper case)
 
 ================================================================================================
 Flat MAP :-
@@ -32,4 +32,39 @@ produce multiple value for each input (one-to-many mapping)
 E.g:- stream.of([1,2], [3,4], [5,6]) ----> [1,2,3,4,5,6] (transforms Stream of stream into single stream)
 
 ===========================================================================================================
+Map-Reduce:-
+
+Map and reduce are functional programming ( Approach ) model use (instead of iterative approach used before )for two purpose :-
+Map :- Transforming data & syntax is --> Stream<R> map(Stream<T> input){}.
+reduce :- aggregate data & syntax is --> T reduce(T identity, BinaryOperator<T> accumulator).
+			So, identity is like initial value and accumulator is data function. 
+
+EG:- Stream : [1,2,3,4,5,6], find sum of stream elements?
+
+Sol:- Map :- Transform Stream<Object> --->   Stream<Int>
+	  Reduce :- Combined Stream<Int> to produce sum
+	  
+     Integer sumofStream = Stream.of(2,4,6,8,10)
+     					   .reduce(0, (a,b)-> a+b);
+ ---------------------------------------				   
+ Real world Eg:- find avg salary of employ class A (  Here we use filter, Map amd Reduce fxn) :-
+ -----------------------------------------  
+   	 
+   A            A ----------> 1000
+                     map
+   B
+       filter
+   A  --------> A ----------> 1000  -------------> 1000 (Avg Salary)
+   					map					Reduce
+   C
+   
+   A  			A ----------> 1000   
+     				map	   
+ ===========================================================================================================
+     					   	  
+ 
+
+
+
+
 

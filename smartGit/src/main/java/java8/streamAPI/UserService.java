@@ -29,4 +29,12 @@ public class UserService {
 				.collect(Collectors.toList());
 	}
 
+	static Stream<Integer> getStreamMarks() {
+		return Stream.of(1, 2, 4, 6, 8, 10);
+	}
+
+	static Stream<String> getNames() {
+		return Stream.of("Aman", "Pal", "Mukesh", "Yograj", "Gaurav");
+	}
+
 }
