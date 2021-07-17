@@ -61,7 +61,31 @@ Sol:- Map :- Transform Stream<Object> --->   Stream<Int>
    A  			A ----------> 1000   
      				map	   
  ===========================================================================================================
-     					   	  
+                                             Parallel Stream :-
+ 
+ 1). Java parallel stream is used for utilization of multiple core of processor.
+ 2). Normally, any java code has one stream of processing, where it is executed sequentially.
+ 3). Whereas, by using of parallel stream, we divided code in multiple streams that are executed parallely on seperate 
+ 	 cores and final result is the combination of individual outcomes.
+ 4). However, the order of execution is not our under control.
+ 
+     Sequential Stream :-                                           Parallel Stream :-
+     
+    Core1    Core2    Core3    Core4                         Core1    Core2    Core3    Core4       
+    
+    Thread1  Idle     Idle     Idle							 Thread1  Thread2  Thread3  Thread4
+    Thread2  Idle     Idle     Idle							      	                           
+    Thread3  Idle     Idle     Idle							           Thread5                 
+    Thread4  Idle     Idle     Idle							           Thread6                 
+    Thread5  Idle     Idle     Idle							                                    
+    Thread6  Idle     Idle     Idle	
+    
+    So, In parallel stream, all core are fully utilized.        				                                    
+ 
+  ===========================================================================================================
+  	                                              
+                                             
+                                                  					   	  
  
 
 
